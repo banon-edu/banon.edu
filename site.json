@@ -1,0 +1,234 @@
+{
+  "hero": {
+    "eyebrow_ar": "استشارات وخدمات مؤسسية",
+    "eyebrow_en": "Corporate advisory & services",
+    "title_ar": "نبني المؤسسات على <em>أساسٍ متين</em>، ونمضي بها أبعد.",
+    "title_en": "We build institutions on <em>solid ground</em> — and take them further.",
+    "lead_ar": "بنون بيت خبرة سعودي يعمل مع الجهات الحكومية والشركات والمنظمات غير الربحية على بناء القدرات المؤسسية، وتصميم الاستراتيجيات، وتحويلها إلى نتائج قابلة للقياس.",
+    "lead_en": "Banon is a Saudi advisory house working with government entities, companies and non-profits to build institutional capability, design strategy, and turn it into measurable results.",
+    "cta1_ar": "احجز استشارة",
+    "cta1_en": "Book a consultation",
+    "cta2_ar": "تعرّف على خدماتنا",
+    "cta2_en": "Explore our services",
+    "meta": [
+      {
+        "text_ar": "متوائمون مع مستهدفات رؤية السعودية 2030",
+        "text_en": "Aligned with Saudi Vision 2030 targets"
+      },
+      {
+        "text_ar": "الرياض — المملكة العربية السعودية",
+        "text_en": "Riyadh — Saudi Arabia"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "value": "+60",
+      "label_ar": "مشروعاً منجزاً",
+      "label_en": "Projects delivered"
+    },
+    {
+      "value": "+40",
+      "label_ar": "جهة تعاونّا معها",
+      "label_en": "Client organisations"
+    },
+    {
+      "value": "15",
+      "label_ar": "سنة خبرة تراكمية",
+      "label_en": "Years of combined experience"
+    },
+    {
+      "value": "6",
+      "label_ar": "مسارات خدمة متكاملة",
+      "label_en": "Integrated practices"
+    }
+  ],
+  "about": {
+    "heading_ar": "من نحن",
+    "heading_en": "About us",
+    "quote_ar": "«بنون» من البناء: أن تُشيّد الشيء على قاعدةٍ تحتمل ما سيُبنى فوقها لاحقًا.",
+    "quote_en": "“Banon” comes from building: raising something on a base able to carry whatever is built above it.",
+    "body_ar": "بدأت بنون من قناعة بسيطة: أن أغلب ما يتعثّر في المؤسسات ليس نقصًا في الحماس، بل غيابًا للأساس — حوكمة واضحة، وأدوار معروفة، وعمليات مكتوبة، وقياس يُظهر أين نقف.\n\nنعمل مع عملائنا من الداخل لا من الخارج: نجلس مع الفرق، ونقرأ الأرقام، ونخرج بخطةٍ تُنفَّذ فعلًا — ثم نبقى معهم حتى تُصبح جزءًا من طريقة عملهم اليومية.",
+    "body_en": "Banon began from a simple conviction: most of what stalls inside organisations is not a lack of enthusiasm, but a missing foundation — clear governance, known roles, written processes, and measurement that shows where you stand.\n\nWe work with clients from the inside, not the outside: we sit with the teams, read the numbers, and leave with a plan that actually gets executed — then stay until it becomes part of how they work every day.",
+    "values": [
+      {
+        "icon": "VAL1",
+        "title_ar": "الإتقان",
+        "title_en": "Craft",
+        "text_ar": "مخرجات مكتوبة بعناية، قابلة للتطبيق دون إعادة صياغة.",
+        "text_en": "Deliverables written with care — usable as they are, without rewriting."
+      },
+      {
+        "icon": "VAL2",
+        "title_ar": "الوضوح",
+        "title_en": "Clarity",
+        "text_ar": "لغة مفهومة بلا مصطلحات زائدة، وتوصيات تقول ماذا نفعل ومتى.",
+        "text_en": "Plain language, no surplus jargon, and recommendations that say what to do and when."
+      },
+      {
+        "icon": "VAL3",
+        "title_ar": "الأمانة",
+        "title_en": "Integrity",
+        "text_ar": "نقول ما نراه، حتى حين يكون الرأي غير المريح هو الأصح.",
+        "text_en": "We say what we see, including when the uncomfortable read is the right one."
+      }
+    ]
+  },
+  "services": {
+    "heading_ar": "خدماتنا",
+    "heading_en": "Our services",
+    "note_ar": "ستة مسارات",
+    "note_en": "Six practices",
+    "items": [
+      {
+        "icon": "SVC1",
+        "title_ar": "الاستشارات الإدارية والتطوير المؤسسي",
+        "title_en": "Management consulting & organisational development",
+        "text_ar": "إعادة تصميم الهياكل التنظيمية، وتوصيف الوظائف، وبناء دليل الصلاحيات، ورفع كفاءة العمليات التشغيلية.",
+        "text_en": "Redesigning org structures, writing job descriptions, building delegation-of-authority manuals, and raising operational efficiency."
+      },
+      {
+        "icon": "SVC2",
+        "title_ar": "التخطيط الاستراتيجي وقياس الأداء",
+        "title_en": "Strategic planning & performance",
+        "text_ar": "صياغة الاستراتيجية ومبادراتها، وبناء مؤشرات الأداء ولوحات المتابعة، ومواءمتها مع مستهدفات رؤية 2030.",
+        "text_en": "Shaping strategy and its initiatives, building KPIs and tracking dashboards, and aligning them with Vision 2030 targets."
+      },
+      {
+        "icon": "SVC3",
+        "title_ar": "الحوكمة وإدارة المخاطر والامتثال",
+        "title_en": "Governance, risk & compliance",
+        "text_ar": "أدلة الحوكمة، ولوائح مجالس الإدارة واللجان، وسجل المخاطر، وجاهزية الامتثال للمتطلبات النظامية.",
+        "text_en": "Governance manuals, board and committee charters, risk registers, and readiness for regulatory requirements."
+      },
+      {
+        "icon": "SVC4",
+        "title_ar": "دراسات الجدوى وتمكين الأعمال",
+        "title_en": "Feasibility & business enablement",
+        "text_ar": "دراسة السوق، والنمذجة المالية، وخطط العمل، ومتطلبات التأسيس والتراخيص للمشاريع الجديدة والتوسّعات.",
+        "text_en": "Market study, financial modelling, business plans, and the licensing requirements behind new ventures and expansions."
+      },
+      {
+        "icon": "SVC5",
+        "title_ar": "التدريب وبناء القدرات",
+        "title_en": "Training & capability building",
+        "text_ar": "برامج تدريبية مصمّمة على قياس المؤسسة، وورش عمل تنفيذية، ومسارات إحلال وتأهيل للكفاءات الوطنية.",
+        "text_en": "Training designed to the organisation's measure, executive workshops, and succession tracks for national talent."
+      },
+      {
+        "icon": "SVC6",
+        "title_ar": "الهوية المؤسسية والتحول الرقمي",
+        "title_en": "Brand & digital transformation",
+        "text_ar": "بناء الهوية ودليلها، وتصميم رحلة المستفيد، واختيار الأنظمة الرقمية وتهيئة الفرق لاستخدامها.",
+        "text_en": "Building the identity and its guidelines, designing the beneficiary journey, and selecting digital systems and readying teams to use them."
+      }
+    ]
+  },
+  "process": {
+    "heading_ar": "منهجيتنا",
+    "heading_en": "How we work",
+    "note_ar": "أربع مراحل",
+    "note_en": "Four stages",
+    "items": [
+      {
+        "title_ar": "التشخيص",
+        "title_en": "Diagnose",
+        "text_ar": "نقرأ الوضع الحالي بالوثائق والمقابلات والأرقام، ونحدّد الفجوة بدقة قبل أي توصية.",
+        "text_en": "We read the current state through documents, interviews and numbers, and pin down the gap before any recommendation."
+      },
+      {
+        "title_ar": "التصميم",
+        "title_en": "Design",
+        "text_ar": "نصمّم الحل مع فريق العميل لا بمعزل عنه: هيكل، أو استراتيجية، أو دليل عمل قابل للاعتماد.",
+        "text_en": "We design the solution with the client's team, not apart from it: a structure, a strategy, or a manual ready for approval."
+      },
+      {
+        "title_ar": "التنفيذ",
+        "title_en": "Implement",
+        "text_ar": "خطة بمسؤول ومدة لكل بند، وتدريب الفريق على ما سيطبّقه فعلًا، لا مجرد تسليم ملف.",
+        "text_en": "A plan that names an owner and a duration for every item, and trains the team on what they will actually apply."
+      },
+      {
+        "title_ar": "القياس والمتابعة",
+        "title_en": "Measure",
+        "text_ar": "مؤشرات واضحة ومراجعات دورية بعد الإغلاق للتأكد أن ما اتُّفق عليه صار ممارسة يومية.",
+        "text_en": "Clear indicators and periodic reviews after closure, confirming that what was agreed has become daily practice."
+      }
+    ]
+  },
+  "why": {
+    "heading_ar": "لماذا بنون",
+    "heading_en": "Why Banon",
+    "items": [
+      {
+        "tag_ar": "السياق",
+        "tag_en": "Context",
+        "title_ar": "نعرف السوق السعودي",
+        "title_en": "We know the Saudi market",
+        "text_ar": "نعمل داخل الأنظمة واللوائح المحلية، ونتحدث لغة الجهات التنظيمية ولغة مجالس الإدارة معًا.",
+        "text_en": "We work inside local regulation, and speak the language of regulators and boards alike."
+      },
+      {
+        "tag_ar": "الأسلوب",
+        "tag_en": "Approach",
+        "title_ar": "فريق واحد لا تقرير منفصل",
+        "title_en": "One team, not a detached report",
+        "text_ar": "نلتحق بفريق العميل طوال المشروع، ونسلّم العمل مشروحًا ومُدرَّبًا عليه، لا ملفًا يُحفظ في الدرج.",
+        "text_en": "We join the client's team for the length of the project and hand over work that is explained and trained on, not filed away."
+      },
+      {
+        "tag_ar": "المخرجات",
+        "tag_en": "Deliverables",
+        "title_ar": "قابلة للتطبيق يوم التسليم",
+        "title_en": "Usable on handover day",
+        "text_ar": "أدلة ونماذج ولوائح جاهزة للاعتماد، مع خطة تنفيذ بمسؤول ومدة لكل بند.",
+        "text_en": "Manuals, templates and charters ready for approval, with an execution plan that names an owner and a duration for every item."
+      },
+      {
+        "tag_ar": "ما بعد التسليم",
+        "tag_en": "After handover",
+        "title_ar": "متابعة لا تنتهي بالتوقيع",
+        "title_en": "Follow-up beyond the signature",
+        "text_ar": "مراجعات دورية بعد الإغلاق للتأكد من أن ما اتُّفق عليه صار ممارسة يومية داخل المؤسسة.",
+        "text_en": "Periodic reviews after closure to confirm that what was agreed has become daily practice."
+      }
+    ]
+  },
+  "cta": {
+    "title_ar": "جاهزون للبدء معكم من <em>الأساس</em>.",
+    "title_en": "Ready to start with you from the <em>foundation</em>.",
+    "text_ar": "جلسة أولى مجانية نفهم فيها وضعكم الحالي ونقترح المسار المناسب — دون التزام.",
+    "text_en": "A first session, free of charge, to understand where you stand and propose the right track — no commitment.",
+    "button_ar": "احجز جلستك الأولى",
+    "button_en": "Book your first session"
+  },
+  "news": {
+    "heading_ar": "أخبارنا",
+    "heading_en": "News",
+    "note_ar": "آخر المستجدات",
+    "note_en": "Latest updates",
+    "show": true
+  },
+  "contact": {
+    "heading_ar": "تواصل معنا",
+    "heading_en": "Get in touch",
+    "intro_ar": "أخبرنا باختصار عن مؤسستك وما تحتاجه، ونعود إليك خلال يوم عمل واحد.",
+    "intro_en": "Tell us briefly about your organisation and what you need; we reply within one business day.",
+    "phone": "+966 50 000 0000",
+    "email": "info@banon.sa",
+    "address_ar": "طريق الملك فهد، الرياض، المملكة العربية السعودية",
+    "address_en": "King Fahd Road, Riyadh, Saudi Arabia",
+    "hours_ar": "الأحد – الخميس، ٨:٣٠ ص – ٥:٠٠ م",
+    "hours_en": "Sunday – Thursday, 8:30 — 17:00",
+    "whatsapp": ""
+  },
+  "social": {
+    "x": "",
+    "linkedin": "",
+    "instagram": ""
+  },
+  "footer": {
+    "copy_ar": "© 2026 بنون للاستشارات. جميع الحقوق محفوظة.",
+    "copy_en": "© 2026 Banon Consulting. All rights reserved."
+  }
+}

@@ -1,0 +1,218 @@
+# ============================================================
+#  إعدادات لوحة تحكم موقع «بنون»  (Sveltia CMS)
+#  ⚠️ غيّر السطر repo إلى: اسم-حسابك-في-github/اسم-المستودع
+# ============================================================
+backend:
+  name: github
+  repo: banon-edu/banon.edu
+  branch: main
+
+media_folder: media
+public_folder: media
+
+collections:
+  # ---------------------------------------------------------
+  - name: site
+    label: محتوى الموقع
+    files:
+      - name: main
+        label: الصفحة الرئيسية
+        file: site.json
+        fields:
+          - label: الواجهة الرئيسية
+            name: hero
+            widget: object
+            fields:
+              - { label: "السطر العلوي (عربي)", name: eyebrow_ar, widget: string }
+              - { label: "السطر العلوي (English)", name: eyebrow_en, widget: string }
+              - { label: "العنوان الرئيسي (عربي) — ضع الكلمة المميّزة بين <em> و </em>", name: title_ar, widget: string }
+              - { label: "العنوان الرئيسي (English)", name: title_en, widget: string }
+              - { label: "النص التعريفي (عربي)", name: lead_ar, widget: text }
+              - { label: "النص التعريفي (English)", name: lead_en, widget: text }
+              - { label: "الزر الأول (عربي)", name: cta1_ar, widget: string }
+              - { label: "الزر الأول (English)", name: cta1_en, widget: string }
+              - { label: "الزر الثاني (عربي)", name: cta2_ar, widget: string }
+              - { label: "الزر الثاني (English)", name: cta2_en, widget: string }
+              - label: "أسطر أسفل الواجهة"
+                name: meta
+                widget: list
+                summary: "{{fields.text_ar}}"
+                fields:
+                  - { label: "النص (عربي)", name: text_ar, widget: string }
+                  - { label: "النص (English)", name: text_en, widget: string }
+
+          - label: "شريط الأرقام"
+            name: stats
+            widget: list
+            summary: "{{fields.value}} — {{fields.label_ar}}"
+            fields:
+              - { label: "الرقم", name: value, widget: string }
+              - { label: "الوصف (عربي)", name: label_ar, widget: string }
+              - { label: "الوصف (English)", name: label_en, widget: string }
+
+          - label: "قسم من نحن"
+            name: about
+            widget: object
+            fields:
+              - { label: "عنوان القسم (عربي)", name: heading_ar, widget: string }
+              - { label: "عنوان القسم (English)", name: heading_en, widget: string }
+              - { label: "الاقتباس (عربي)", name: quote_ar, widget: text }
+              - { label: "الاقتباس (English)", name: quote_en, widget: text }
+              - { label: "النص (عربي) — افصل بين الفقرات بسطر فارغ", name: body_ar, widget: text }
+              - { label: "النص (English)", name: body_en, widget: text }
+              - label: "القيم"
+                name: values
+                widget: list
+                summary: "{{fields.title_ar}}"
+                fields:
+                  - label: "المجسّم"
+                    name: icon
+                    widget: select
+                    default: VAL1
+                    options:
+                      - { label: "مكعّب ذهبي", value: VAL1 }
+                      - { label: "ماسة ذهبية", value: VAL2 }
+                      - { label: "كرة ذهبية", value: VAL3 }
+                  - { label: "العنوان (عربي)", name: title_ar, widget: string }
+                  - { label: "العنوان (English)", name: title_en, widget: string }
+                  - { label: "الوصف (عربي)", name: text_ar, widget: text }
+                  - { label: "الوصف (English)", name: text_en, widget: text }
+
+          - label: "قسم الخدمات"
+            name: services
+            widget: object
+            fields:
+              - { label: "عنوان القسم (عربي)", name: heading_ar, widget: string }
+              - { label: "عنوان القسم (English)", name: heading_en, widget: string }
+              - { label: "ملاحظة جانبية (عربي)", name: note_ar, widget: string, required: false }
+              - { label: "ملاحظة جانبية (English)", name: note_en, widget: string, required: false }
+              - label: "الخدمات"
+                name: items
+                widget: list
+                summary: "{{fields.title_ar}}"
+                fields:
+                  - label: "المجسّم"
+                    name: icon
+                    widget: select
+                    default: SVC1
+                    options:
+                      - { label: "هيكل تنظيمي", value: SVC1 }
+                      - { label: "مؤشرات أداء", value: SVC2 }
+                      - { label: "درع الحوكمة", value: SVC3 }
+                      - { label: "أقراص مالية", value: SVC4 }
+                      - { label: "تدريب وبناء قدرات", value: SVC5 }
+                      - { label: "هوية وتحول رقمي", value: SVC6 }
+                  - { label: "اسم الخدمة (عربي)", name: title_ar, widget: string }
+                  - { label: "اسم الخدمة (English)", name: title_en, widget: string }
+                  - { label: "الوصف (عربي)", name: text_ar, widget: text }
+                  - { label: "الوصف (English)", name: text_en, widget: text }
+
+          - label: "قسم المنهجية"
+            name: process
+            widget: object
+            fields:
+              - { label: "عنوان القسم (عربي)", name: heading_ar, widget: string }
+              - { label: "عنوان القسم (English)", name: heading_en, widget: string }
+              - { label: "ملاحظة جانبية (عربي)", name: note_ar, widget: string, required: false }
+              - { label: "ملاحظة جانبية (English)", name: note_en, widget: string, required: false }
+              - label: "المراحل"
+                name: items
+                widget: list
+                summary: "{{fields.title_ar}}"
+                fields:
+                  - { label: "اسم المرحلة (عربي)", name: title_ar, widget: string }
+                  - { label: "اسم المرحلة (English)", name: title_en, widget: string }
+                  - { label: "الوصف (عربي)", name: text_ar, widget: text }
+                  - { label: "الوصف (English)", name: text_en, widget: text }
+
+          - label: "قسم لماذا بنون"
+            name: why
+            widget: object
+            fields:
+              - { label: "عنوان القسم (عربي)", name: heading_ar, widget: string }
+              - { label: "عنوان القسم (English)", name: heading_en, widget: string }
+              - label: "البطاقات"
+                name: items
+                widget: list
+                summary: "{{fields.title_ar}}"
+                fields:
+                  - { label: "التصنيف (عربي)", name: tag_ar, widget: string }
+                  - { label: "التصنيف (English)", name: tag_en, widget: string }
+                  - { label: "العنوان (عربي)", name: title_ar, widget: string }
+                  - { label: "العنوان (English)", name: title_en, widget: string }
+                  - { label: "الوصف (عربي)", name: text_ar, widget: text }
+                  - { label: "الوصف (English)", name: text_en, widget: text }
+
+          - label: "شريط الدعوة للحجز"
+            name: cta
+            widget: object
+            fields:
+              - { label: "العنوان (عربي)", name: title_ar, widget: string }
+              - { label: "العنوان (English)", name: title_en, widget: string }
+              - { label: "النص (عربي)", name: text_ar, widget: text }
+              - { label: "النص (English)", name: text_en, widget: text }
+              - { label: "نص الزر (عربي)", name: button_ar, widget: string }
+              - { label: "نص الزر (English)", name: button_en, widget: string }
+
+          - label: "قسم الأخبار"
+            name: news
+            widget: object
+            fields:
+              - { label: "إظهار قسم الأخبار في الموقع", name: show, widget: boolean, default: true }
+              - { label: "عنوان القسم (عربي)", name: heading_ar, widget: string }
+              - { label: "عنوان القسم (English)", name: heading_en, widget: string }
+              - { label: "ملاحظة جانبية (عربي)", name: note_ar, widget: string, required: false }
+              - { label: "ملاحظة جانبية (English)", name: note_en, widget: string, required: false }
+
+          - label: "بيانات التواصل"
+            name: contact
+            widget: object
+            fields:
+              - { label: "عنوان القسم (عربي)", name: heading_ar, widget: string }
+              - { label: "عنوان القسم (English)", name: heading_en, widget: string }
+              - { label: "مقدمة (عربي)", name: intro_ar, widget: text }
+              - { label: "مقدمة (English)", name: intro_en, widget: text }
+              - { label: "رقم الهاتف", name: phone, widget: string }
+              - { label: "البريد الإلكتروني", name: email, widget: string }
+              - { label: "رقم واتساب (اتركه فارغاً لإخفائه)", name: whatsapp, widget: string, required: false }
+              - { label: "العنوان (عربي)", name: address_ar, widget: string }
+              - { label: "العنوان (English)", name: address_en, widget: string }
+              - { label: "أوقات الدوام (عربي)", name: hours_ar, widget: string }
+              - { label: "أوقات الدوام (English)", name: hours_en, widget: string }
+
+          - label: "روابط التواصل الاجتماعي"
+            name: social
+            widget: object
+            fields:
+              - { label: "رابط X (تويتر)", name: x, widget: string, required: false }
+              - { label: "رابط LinkedIn", name: linkedin, widget: string, required: false }
+              - { label: "رابط Instagram", name: instagram, widget: string, required: false }
+
+          - label: "التذييل"
+            name: footer
+            widget: object
+            fields:
+              - { label: "حقوق النشر (عربي)", name: copy_ar, widget: string }
+              - { label: "حقوق النشر (English)", name: copy_en, widget: string }
+
+  # ---------------------------------------------------------
+  - name: news
+    label: الأخبار
+    files:
+      - name: list
+        label: قائمة الأخبار
+        file: news.json
+        fields:
+          - label: "الأخبار"
+            name: items
+            widget: list
+            summary: "{{fields.date}} — {{fields.title_ar}}"
+            fields:
+              - { label: "التاريخ", name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+              - { label: "العنوان (عربي)", name: title_ar, widget: string }
+              - { label: "العنوان (English)", name: title_en, widget: string }
+              - { label: "ملخّص قصير (عربي)", name: summary_ar, widget: text }
+              - { label: "ملخّص قصير (English)", name: summary_en, widget: text }
+              - { label: "نص الخبر (عربي)", name: body_ar, widget: text, required: false }
+              - { label: "نص الخبر (English)", name: body_en, widget: text, required: false }
+              - { label: "صورة الخبر", name: image, widget: image, required: false }
