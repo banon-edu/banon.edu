@@ -469,6 +469,9 @@ input,textarea,select{
 input:focus,textarea:focus,select:focus{outline:none;border-color:var(--gold-deep);box-shadow:0 0 0 3px color-mix(in srgb,var(--gold) 35%,transparent)}
 textarea{min-height:120px;resize:vertical}
 .formnote{font-size:.8rem;color:var(--muted)}
+.fstatus{font-size:.88rem;margin:10px 0 0;min-height:1.2em}
+.fstatus.ok{color:var(--gold-deep)}
+.fstatus.err{color:#C0563F}
 
 /* ---------- footer ---------- */
 footer.site{background:var(--panel);color:rgba(246,239,233,.72);padding-block:46px;position:relative;overflow:hidden}
@@ -741,6 +744,8 @@ footer.site img{height:42px;width:auto}
           <div>
             <button class="btn btn-ink" type="submit"><span data-ar="إرسال الطلب" data-en="Send request">إرسال الطلب</span></button>
           </div>
+          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0">
+          <p class="fstatus" id="fstatus" role="status" aria-live="polite"></p>
           <p class="formnote" id="formnote"></p>
         </form>
       </div>
@@ -981,6 +986,7 @@ footer.site img{height:42px;width:auto}
     bi(document.getElementById('copy'),S.footer||{},'copy');
 
     window.__banonEmail = C.email || 'info@banon.sa';
+    window.__banonFormKey=(C&&C.form_key)||'';
   }
 
   // ---------- تحميل المحتوى ----------
@@ -1047,8 +1053,38 @@ footer.site img{height:42px;width:auto}
               +(ar?'البريد: ':'Email: ')+f.email.value+'\n'
               +(ar?'الخدمة: ':'Service: ')+f.service.value+'\n\n'
               +f.message.value;
-      window.location.href='mailto:'+(window.__banonEmail||'info@banon.sa')
-        +'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+      var key=window.__banonFormKey||'';
+      var st=document.getElementById('fstatus');
+      var btn=f.querySelector('button[type="submit"]');
+      function say(msg,ok){ if(!st) return; st.textContent=msg; st.className='fstatus '+(ok?'ok':'err'); }
+      if(!key){
+        window.location.href='mailto:'+(window.__banonEmail||'info@banon.sa')
+          +'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+        return;
+      }
+      if(f.website && f.website.value){ return; }
+      if(btn){ btn.disabled=true; btn.dataset.t=btn.textContent; btn.textContent=(ar?'جارٍ الإرسال…':'Sending…'); }
+      say(ar?'جارٍ الإرسال…':'Sending…',true);
+      fetch('https://api.web3forms.com/submit',{
+        method:'POST',
+        headers:{'Content-Type':'application/json','Accept':'application/json'},
+        body:JSON.stringify({
+          access_key:key, subject:subject, from_name:'موقع بنون',
+          'الاسم':f.name.value, 'الجهة':f.org.value, 'البريد':f.email.value,
+          'الخدمة':f.service.value, 'الرسالة':f.message.value, replyto:f.email.value
+        })
+      }).then(function(r){return r.json();}).then(function(d){
+        if(d&&d.success){
+          f.reset();
+          say(ar?'وصلنا طلبك، وسنتواصل معك قريبًا.':'Your request has been received. We will contact you shortly.',true);
+        }else{
+          say(ar?'تعذّر الإرسال. حاول مرة أخرى أو راسلنا على البريد مباشرة.':'Could not send. Please try again or email us directly.',false);
+        }
+      }).catch(function(){
+        say(ar?'تعذّر الإرسال. تأكد من اتصالك بالإنترنت.':'Could not send. Check your connection.',false);
+      }).then(function(){
+        if(btn){ btn.disabled=false; btn.textContent=btn.dataset.t||(ar?'إرسال الطلب':'Send request'); }
+      });
     });
 
     // تمرير سلس

@@ -225,6 +225,7 @@ collections:
               - { label: "العنوان (English)", name: address_en, widget: string }
               - { label: "أوقات الدوام (عربي)", name: hours_ar, widget: string }
               - { label: "أوقات الدوام (English)", name: hours_en, widget: string }
+              - { label: "مفتاح نموذج التواصل (من web3forms.com — اتركه فارغاً ليفتح بريد الزائر بدلاً من الإرسال)", name: form_key, widget: string, required: false }
 
           - label: "روابط التواصل الاجتماعي"
             name: social
