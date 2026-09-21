@@ -71,6 +71,13 @@
         "title_en": "Integrity",
         "text_ar": "نقول ما نراه، حتى حين يكون الرأي غير المريح هو الأصح.",
         "text_en": "We say what we see, including when the uncomfortable read is the right one."
+      },
+      {
+        "icon": "VAL1",
+        "title_ar": "الأبتكار",
+        "title_en": "weag wedgawseg",
+        "text_ar": "ابتكار كل ماهو جديد وحديث",
+        "text_en": "fdhf dfhdsfhsdfh"
       }
     ]
   },
@@ -89,30 +96,30 @@
       },
       {
         "icon": "SVC2",
-        "title_ar": "التخطيط الاستراتيجي وقياس الأداء",
+        "title_ar": "التدريب",
         "title_en": "Strategic planning & performance",
-        "text_ar": "صياغة الاستراتيجية ومبادراتها، وبناء مؤشرات الأداء ولوحات المتابعة، ومواءمتها مع مستهدفات رؤية 2030.",
+        "text_ar": "تدريب العاملين في المجال التعليمي",
         "text_en": "Shaping strategy and its initiatives, building KPIs and tracking dashboards, and aligning them with Vision 2030 targets."
       },
       {
         "icon": "SVC3",
-        "title_ar": "الحوكمة وإدارة المخاطر والامتثال",
+        "title_ar": "تجهيز البيئات التعليمية",
         "title_en": "Governance, risk & compliance",
-        "text_ar": "أدلة الحوكمة، ولوائح مجالس الإدارة واللجان، وسجل المخاطر، وجاهزية الامتثال للمتطلبات النظامية.",
+        "text_ar": "تجهيز بيئات تعليمية بأحدث الأثاث",
         "text_en": "Governance manuals, board and committee charters, risk registers, and readiness for regulatory requirements."
       },
       {
         "icon": "SVC4",
-        "title_ar": "دراسات الجدوى وتمكين الأعمال",
+        "title_ar": "المتابعة والإشراف",
         "title_en": "Feasibility & business enablement",
-        "text_ar": "دراسة السوق، والنمذجة المالية، وخطط العمل، ومتطلبات التأسيس والتراخيص للمشاريع الجديدة والتوسّعات.",
+        "text_ar": "متابعة العاملين في الجهات التعليمية والجهات",
         "text_en": "Market study, financial modelling, business plans, and the licensing requirements behind new ventures and expansions."
       },
       {
         "icon": "SVC5",
-        "title_ar": "التدريب وبناء القدرات",
+        "title_ar": "التمكين",
         "title_en": "Training & capability building",
-        "text_ar": "برامج تدريبية مصمّمة على قياس المؤسسة، وورش عمل تنفيذية، ومسارات إحلال وتأهيل للكفاءات الوطنية.",
+        "text_ar": "تمكين العاملين",
         "text_en": "Training designed to the organisation's measure, executive workshops, and succession tracks for national talent."
       },
       {
