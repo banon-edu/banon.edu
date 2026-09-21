@@ -6,6 +6,7 @@
     "title_en": "We build institutions on <em>solid ground</em> — and take them further.",
     "lead_ar": "شركة بنون للحلول التعليمية المتقدمة معًا نحو جيل يعتز بقيمة واخلاقة",
     "lead_en": "Banon is a Saudi advisory house working with government entities, companies and non-profits to build institutional capability, design strategy, and turn it into measurable results.",
+    "image": "",
     "cta1_ar": "للتواصل",
     "cta1_en": "Book a consultation",
     "cta2_ar": "تعرّف على خدماتنا",
@@ -283,7 +284,8 @@
     "address_ar": "طريق الملك خالد، الطائف، المملكة العربية السعودية",
     "address_en": "King Fahd Road, Riyadh, Saudi Arabia",
     "hours_ar": "الأحد – الخميس، 8:00 ص – 4:00 م",
-    "hours_en": "Sunday – Thursday, 8:00 — 16:00"
+    "hours_en": "Sunday – Thursday, 8:00 — 16:00",
+    "form_key": "a6f03c6d-13d2-46c2-8794-4165eb27273a"
   },
   "social": {
     "x": "https://x.com/banon_aes?lang=ar",
