@@ -194,8 +194,64 @@
       }
     ]
   },
+  "org": {
+    "show": true,
+    "heading_ar": "الهيكل التنظيمي",
+    "heading_en": "",
+    "note_ar": "",
+    "note_en": "",
+    "items": [
+      {
+        "tag_ar": "مجلس الإدارة",
+        "tag_en": "",
+        "title_ar": "مجلس الإدارة",
+        "title_en": "",
+        "text_ar": "رئيس المجلس د/ خالد دخيل الله الحارثي\nعضو / د محمد عبدالله الحصيني \nعضو/ رائد محمد الحارثي",
+        "text_en": ""
+      },
+      {
+        "tag_ar": "الإدارة التنفيذية",
+        "tag_en": "",
+        "title_ar": "الإدارة التنفيذية",
+        "title_en": "",
+        "text_ar": "المدير التنفيذي \nأ/ فارس محمد عسيري",
+        "text_en": ""
+      }
+    ]
+  },
+  "branches": {
+    "show": true,
+    "heading_ar": "فروعنا",
+    "heading_en": "فروع بيئات",
+    "note_ar": "",
+    "note_en": "",
+    "items": [
+      {
+        "name_ar": "بيئات لطفل المستقبل فرع جدة",
+        "name_en": "",
+        "city_ar": "",
+        "city_en": "جدة",
+        "address_ar": "",
+        "address_en": "حي الخالدية",
+        "phone": "",
+        "email": "",
+        "map": ""
+      },
+      {
+        "name_ar": "بيئات لطفل المستقبل فرع الطائف",
+        "name_en": "",
+        "city_ar": "",
+        "city_en": "الطائف",
+        "address_ar": "",
+        "address_en": "",
+        "phone": "0554751000",
+        "email": "",
+        "map": ""
+      }
+    ]
+  },
   "cta": {
-    "title_ar": "جاهزون للبدء معكم من <em>الأساس</em>.",
+    "title_ar": "جاهزون للبدء معكم من <em></em>.",
     "title_en": "Ready to start with you from the <em>foundation</em>.",
     "text_ar": "جلسة أولى مجانية نفهم فيها وضعكم الحالي ونقترح المسار المناسب — دون التزام.",
     "text_en": "A first session, free of charge, to understand where you stand and propose the right track — no commitment.",
